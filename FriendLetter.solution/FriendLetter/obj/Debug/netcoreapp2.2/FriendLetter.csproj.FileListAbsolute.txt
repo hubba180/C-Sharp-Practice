@@ -1,0 +1,6 @@
+/Users/iangregg/Desktop/FriendLetter/FriendLetter.solution/FriendLetter/obj/Debug/netcoreapp2.2/FriendLetter.csprojAssemblyReference.cache
+/Users/iangregg/Desktop/FriendLetter/FriendLetter.solution/FriendLetter/obj/Debug/netcoreapp2.2/FriendLetter.csproj.CoreCompileInputs.cache
+/Users/iangregg/Desktop/FriendLetter/FriendLetter.solution/FriendLetter/obj/Debug/netcoreapp2.2/FriendLetter.RazorAssemblyInfo.cache
+/Users/iangregg/Desktop/FriendLetter/FriendLetter.solution/FriendLetter/obj/Debug/netcoreapp2.2/FriendLetter.RazorAssemblyInfo.cs
+/Users/iangregg/Desktop/FriendLetter/FriendLetter.solution/FriendLetter/obj/Debug/netcoreapp2.2/FriendLetter.AssemblyInfoInputs.cache
+/Users/iangregg/Desktop/FriendLetter/FriendLetter.solution/FriendLetter/obj/Debug/netcoreapp2.2/FriendLetter.AssemblyInfo.cs
