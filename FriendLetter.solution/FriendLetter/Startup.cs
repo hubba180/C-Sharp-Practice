@@ -10,6 +10,7 @@ namespace FriendLetter
   {
     public Startup(IHostingEnvironment env)
     {
+      app.UseDeveloperExceptionPage();
       var builder = new ConfigurationBuilder()
         .SetBasePath(env.ContentRootPath)
         .AddEnvironmentVariables();

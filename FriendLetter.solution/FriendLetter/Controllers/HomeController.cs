@@ -17,5 +17,13 @@ namespace FriendLetter.Controllers
       myLetterVariable.Sender = "Philip";
       return View(myLetterVariable);
     }
+    [Route("/")]
+    public ActionResult Postcard(string recipent, string sender)
+    {
+      LetterVariable myLetterVariable = new LetterVariable();
+      myLetterVariable.Recipient = recipent;
+      myLetterVariable.Sender = sender;
+      return View(myLetterVariable);
+    }
   }
 }
