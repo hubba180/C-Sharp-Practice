@@ -6,33 +6,36 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FriendLetter
 {
-  public Startup(IHostingEnvironment env)
+  public class Startup 
   {
-    var builder = new ConfigurationBuilder()
-      .SetBasePath(env.ContentRootPath)
-      .AddEnvironmentVariables();
-    Configuration = builder.Build();
-  }
-
-  public IConfigurationRoot Configuration {get; }
-
-  public void ConfigureServices(IServiceCollection services)
-  {
-    services.AddMvc();
-  }
-
-  public void Configure(IApplicationBuilder app)
-  {
-    app.UseMvc(routes => 
+    public Startup(IHostingEnvironment env)
     {
-      routes.MapRoute(
-        name:"default",
-        template: "{controller=Home}/{action=Index}/{id?}");
-    });
+      var builder = new ConfigurationBuilder()
+        .SetBasePath(env.ContentRootPath)
+        .AddEnvironmentVariables();
+      Configuration = builder.Build();
+    }
 
-    app.Run(async (context)  =>
+    public IConfigurationRoot Configuration {get; }
+
+    public void ConfigureServices(IServiceCollection services)
     {
-      await context.Response.WriteAsync("Hello World");
-    });
+      services.AddMvc();
+    }
+
+    public void Configure(IApplicationBuilder app)
+    {
+      app.UseMvc(routes => 
+      {
+        routes.MapRoute(
+          name:"default",
+          template: "{controller=Home}/{action=Index}/{id?}");
+      });
+
+      app.Run(async (context)  =>
+      {
+        await context.Response.WriteAsync("Hello World");
+      });
+    }
   }
 }
